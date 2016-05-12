@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #999;
+      }
+      button {
+        width: 100px;
+        height: 80px;
+        font-size: 4em;
+        background: rgba(70, 172, 194, 0.9);
+        color: white;
+        border-radius: 10px;
+      }
+      button:hover {
+        color: black;
+      }
+      button:active {
+        border: 2px solid white;
+      }
+      button:focus {
+        outline: none;
+      }
+      #display {
+        height: 80px;
+        width: 308px;
+        font-size: 4em;
+        text-align: right;
+        background: #DCE1E9;
+      }
+      #container {
+        background: #EAF2E3;
+        width: 415px;
+        height: 420px;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="container">
+      <table>
+        <tr>
+          <td>
+            <button type="button" name="button" class="clear">C</button>
+          </td>
+          <td colspan="3">
+            <input type="text" id="display">
+          </td>
+        </tr>
+        <tr>
+          <td><button type="button" name="button" class="number">7</button></td>
+          <td><button type="button" name="button" class="number">8</button></td>
+          <td><button type="button" name="button" class="number">9</button></td>
+          <td><button type="button" name="button" class="operator">X</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" name="button" class="number">4</button></td>
+          <td><button type="button" name="button" class="number">5</button></td>
+          <td><button type="button" name="button" class="number">6</button></td>
+          <td><button type="button" name="button" class="operator">-</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" name="button" class="number">1</button></td>
+          <td><button type="button" name="button" class="number">2</button></td>
+          <td><button type="button" name="button" class="number">3</button></td>
+          <td><button type="button" name="button" class="operator">+</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" name="button" class="number">0</button></td>
+          <td><button type="button" name="button" class="evaluate">=</button></td>
+          <td><button type="button" name="button" class="operator">/</button></td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
+
+    </script>
+  </body>
+</html>
