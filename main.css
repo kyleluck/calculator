@@ -49,6 +49,12 @@ button:focus {
 .operator {
   background: linear-gradient(to bottom, #39b4a6, #18A999);
 }
+.operator:hover, .operator.active {
+  background-position: 0px !important;
+}
 .evaluate {
   background: linear-gradient(to bottom, #E7BB41, #cba439);
+}
+.evaluate:hover, .evaluate.active {
+  background-position: 0px !important;
 }
