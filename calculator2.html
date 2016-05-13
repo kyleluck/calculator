@@ -52,25 +52,26 @@
       .form-control, .btn-default {
         height: 100px;
       }
-
       @media (max-width: 600px) {
         button {
           width: 80px;
         }
+      }
+      .clear {
+        width:100%;
+        font-size: 4em;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col col-xs-12">
-          <div class="input-group">
-            <span class="input-group-btn">
-              <button class="btn btn-default clear" type="button">C</button>
-            </span>
-            <input type="text" class="form-control" id="display">
-          </div><!-- /input-group -->
-        </div><!-- /.col -->
+        <div class="col col-xs-3">
+          <button class="btn btn-default clear" type="button">C</button>
+        </div>
+        <div class="col col-xs-9">
+          <input type="text" class="form-control" id="display">
+        </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-justified" role="group" aria-label="...">
