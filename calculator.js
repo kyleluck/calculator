@@ -55,4 +55,10 @@ $(function() {
     }
     operator = null;
   });
+
+  $('.decimal').click(function() {
+    var currentInput = Number(display.val());
+    var displayWithDecimal = currentInput + ".";
+    display.val(displayWithDecimal);
+  });
 });
